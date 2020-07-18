@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Julio Moreira",
+      "authorEmail": "hello@juliomoreira.dev",
+      "authorUrl": "http://juliomoreira.pro"
+    }
+  }
+}
