@@ -75,7 +75,9 @@
     ]
   },
   "scripts": {
-    "pretest": "eslint . --fix",
+    "prebuild": "rm -rf generators",
+    "build": "yarn -s prebuild && tsc",
+    "pretest": "yarn build",
     "test": "jest"
   },
   "repository": "juliomoreira/generator-vtex-service",
