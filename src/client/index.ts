@@ -32,8 +32,8 @@ class ClientGenerator extends Generator {
     const { name, baseURL } = this.options;
     const fileName = name.charAt(0).toLowerCase() + name.substr(1);
     const className = name.charAt(0).toUpperCase() + name.substr(1);
-    const source = this.templatePath("client.template.ts");
     const filePath = `node/clients/${fileName}.ts`;
+    const source = this.templatePath("client.template.ts");
     const destination = this.destinationPath(filePath);
     this.fs.copyTpl(source, destination, { className, baseURL });
     return this;
