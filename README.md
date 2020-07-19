@@ -7,8 +7,8 @@
 First, install [Yeoman](http://yeoman.io) and generator-vtex-service using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
-yarn add -g yo
-yarn add -g generator-vtex-service
+npm i -g yo
+npm i -g generator-vtex-service
 ```
 
 Available generators:
