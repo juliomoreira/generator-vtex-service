@@ -40,7 +40,7 @@ class ClientGenerator extends Generator {
   }
 
   install() {
-    this.yarnInstall("@vtex/api", { dev: true });
+    this.yarnInstall("@vtex/api", { dev: true, cwd: "node" });
   }
 }
 
