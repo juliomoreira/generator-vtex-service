@@ -76,10 +76,12 @@
   },
   "scripts": {
     "prebuild": "rm -rf generators",
-    "build": "yarn -s prebuild && tsc",
+    "build": "yarn prebuild && tsc",
+    "postbuild": "yarn copy:templates",
+    "copy:templates": "cd src && rsync -a --include=\"*/\" --include=\"*.template.ts\" --exclude=\"*\" . ../generators",
     "pretest": "yarn build",
     "test": "jest"
   },
-  "repository": "juliomoreira/generator-vtex-service",
+  "repository": "https://github.com/juliomoreira/generator-vtex-service",
   "license": "MIT"
 }
