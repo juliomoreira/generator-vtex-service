@@ -1,8 +1,13 @@
 {
   "name": "generator-vtex-service",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Generate VTEX Node service routes, middlewares and clients",
-  "homepage": "",
+  "homepage": "https://github.com/juliomoreira/generator-vtex-service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliomoreira/generator-vtex-service.git"
+  },
+  "license": "MIT",
   "author": {
     "name": "Julio Moreira",
     "email": "hello@juliomoreira.dev",
@@ -36,9 +41,7 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "chalk": "^2.1.0",
-    "yeoman-generator": "^2.0.1",
-    "yosay": "^2.0.1"
+    "yeoman-generator": "^4.11.0"
   },
   "jest": {
     "testEnvironment": "node"
@@ -82,7 +85,5 @@
     "pretest": "yarn build",
     "test": "jest",
     "prepack": "yarn build"
-  },
-  "repository": "https://github.com/juliomoreira/generator-vtex-service",
-  "license": "MIT"
+  }
 }
