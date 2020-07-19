@@ -1,6 +1,6 @@
 {
   "name": "generator-vtex-service",
-  "version": "0.0.0",
+  "version": "0.1.2",
   "description": "Generate VTEX Node service routes, middlewares and clients",
   "homepage": "",
   "author": {
