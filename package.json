@@ -1,6 +1,6 @@
 {
   "name": "generator-vtex-service",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Generate VTEX Node service routes, middlewares and clients",
   "homepage": "",
   "author": {
@@ -80,7 +80,8 @@
     "postbuild": "yarn copy:templates",
     "copy:templates": "cd src && rsync -a --include=\"*/\" --include=\"*.template.ts\" --exclude=\"*\" . ../generators",
     "pretest": "yarn build",
-    "test": "jest"
+    "test": "jest",
+    "prepack": "yarn build"
   },
   "repository": "https://github.com/juliomoreira/generator-vtex-service",
   "license": "MIT"
