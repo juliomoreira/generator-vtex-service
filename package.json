@@ -2,7 +2,12 @@
   "name": "generator-vtex-service",
   "version": "0.1.5",
   "description": "Generate VTEX Node service routes, middlewares and clients",
-  "homepage": "",
+  "homepage": "https://github.com/juliomoreira/generator-vtex-service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliomoreira/generator-vtex-service.git"
+  },
+  "license": "MIT",
   "author": {
     "name": "Julio Moreira",
     "email": "hello@juliomoreira.dev",
@@ -80,7 +85,5 @@
     "pretest": "yarn build",
     "test": "jest",
     "prepack": "yarn build"
-  },
-  "repository": "https://github.com/juliomoreira/generator-vtex-service",
-  "license": "MIT"
+  }
 }
