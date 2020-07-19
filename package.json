@@ -80,7 +80,8 @@
     "postbuild": "yarn copy:templates",
     "copy:templates": "cd src && rsync -a --include=\"*/\" --include=\"*.template.ts\" --exclude=\"*\" . ../generators",
     "pretest": "yarn build",
-    "test": "jest"
+    "test": "jest",
+    "prepack": "yarn build"
   },
   "repository": "https://github.com/juliomoreira/generator-vtex-service",
   "license": "MIT"
