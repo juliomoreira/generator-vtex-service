@@ -48,6 +48,7 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
+    "ts-morph": "^7.1.2",
     "yeoman-generator": "^4.11.0"
   },
   "jest": {
